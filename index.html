@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Construction & Renovation · Curaçao</title>
+  <meta name="description" content="Quality construction & renovation. See recent projects and contact us on WhatsApp or email." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="assets/favicon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>.card{background:white;border-radius:1rem;box-shadow:0 10px 18px rgba(2,6,23,.06);border:1px solid rgba(15,23,42,.08);}</style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-sky-200 via-white to-emerald-200"></div>
+    <div class="max-w-6xl mx-auto px-4 py-8 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-xl font-extrabold tracking-tight">Lindly Construction</span>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/31641930625?text=Bon%20dia!%20Mi%20ke%20informashon%20tokante%20konstrukshon.%20Por%20fabor%20tuma%20kontakto." class="px-4 py-2 rounded-lg bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 pb-14 pt-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+          We build right.<br><span class="text-emerald-700">Quality · On Time · On Budget</span>
+        </h1>
+        <p class="mt-3 text-lg opacity-90">
+          Homes, extensions, renovations and commercial fit‑outs. Licensed crew, transparent pricing, solid guarantees.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#projects" class="px-5 py-3 rounded-xl bg-sky-600 text-white font-semibold shadow hover:bg-sky-700">See Projects</a>
+          <a href="#services" class="px-5 py-3 rounded-xl bg-white ring-1 ring-slate-200 font-semibold hover:bg-slate-50">Our Services</a>
+        </div>
+      </div>
+      <div class="card p-4">
+        <img src="images/p1.jpg" alt="Featured project" class="rounded-xl w-full h-72 object-cover" loading="lazy">
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 space-y-16 py-12">
+    <section id="services">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Services</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div class="card p-6"><h3 class="font-bold text-lg">Renovation</h3><p class="mt-2 text-sm opacity-90">Kitchen, bathroom, flooring, drywall, paint. Clean, precise finishes.</p></div>
+        <div class="card p-6"><h3 class="font-bold text-lg">New Build</h3><p class="mt-2 text-sm opacity-90">Extensions, framing, roofing, concrete — end‑to‑end project management.</p></div>
+        <div class="card p-6"><h3 class="font-bold text-lg">Commercial</h3><p class="mt-2 text-sm opacity-90">Shops, offices & fit‑outs with minimal downtime.</p></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Recent Projects</h2>
+      <p class="opacity-80 mt-1">Click any photo to view fullscreen.</p>
+      <div id="galleryGrid" class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"></div>
+
+      <div id="lightbox" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+        <button id="lbClose" class="absolute top-4 right-4 text-white text-2xl" aria-label="Close">✕</button>
+        <button id="lbPrev"  class="absolute left-3 md:left-6 text-white text-2xl px-3 py-2 rounded hover:bg-white/10" aria-label="Previous">‹</button>
+        <button id="lbNext"  class="absolute right-3 md:right-6 text-white text-2xl px-3 py-2 rounded hover:bg-white/10" aria-label="Next">›</button>
+        <figure class="max-w-5xl w-[92%]">
+          <img id="lbImage" src="" alt="" class="w-full h-[72vh] object-contain rounded-lg shadow" />
+          <figcaption id="lbCap" class="text-slate-100 text-sm mt-3 opacity-90"></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="card p-8">
+      <h2 class="text-2xl md:text-3xl font-extrabold">About Us</h2>
+      <p class="mt-3 opacity-90">We’re a Curaçao construction team with 10+ years experience delivering reliable, safe, and clean jobs. We work with clear scopes, signed quotes, and daily cleanup.</p>
+      <ul class="mt-3 list-disc list-inside text-sm opacity-90 space-y-1">
+        <li>Licensed & insured</li>
+        <li>Written quotes & timelines</li>
+        <li>We respect your home and neighbors</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card p-8">
+      <div class="md:flex items-center justify-between gap-6">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Get a Free Quote</h2>
+          <p class="mt-2 opacity-90">Send photos and a short description on WhatsApp, or email us.</p>
+        </div>
+        <div class="flex flex-wrap gap-3 mt-4 md:mt-0">
+          <a href="https://wa.me/31641930625?text=Bon%20dia!%20Mi%20ke%20informashon%20tokante%20konstrukshon.%20Por%20fabor%20tuma%20kontakto." class="px-5 py-3 rounded-xl bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700">WhatsApp</a>
+          <a href="mailto:pracins@yahoo.com" class="px-5 py-3 rounded-xl bg-white ring-1 ring-slate-200 font-semibold hover:bg-slate-50">Email</a>
+          <a href="tel:+31641930625" class="px-5 py-3 rounded-xl bg-white ring-1 ring-slate-200 font-semibold hover:bg-slate-50">Call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-10 text-center text-xs opacity-70">© <span id="year"></span> Lindly Construction — All rights reserved.</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const GALLERY = [
+      {src: 'images/p1.jpg', cap: 'New build shell — block & beam'},
+      {src: 'images/p2.jpg', cap: 'Masonry walls — window openings'},
+      {src: 'images/p3.jpg', cap: 'Exterior structure — porch progress'},
+    ];
+    const grid = document.getElementById('galleryGrid');
+    function buildGrid(){
+      grid.innerHTML = '';
+      GALLERY.forEach((item, idx) => {
+        const a = document.createElement('a');
+        a.href = item.src;
+        a.className = 'group relative block';
+        a.innerHTML = `
+          <img src="${item.src}" alt="${item.cap||''}" loading="lazy"
+               class="h-40 md:h-48 w-full object-cover rounded-lg ring-1 ring-slate-200 shadow-sm group-hover:opacity-95">
+          <div class="absolute inset-0 rounded-lg bg-black/0 group-hover:bg-black/10 transition"></div>
+        `;
+        a.addEventListener('click', (e) => { e.preventDefault(); openLightbox(idx); });
+        grid.appendChild(a);
+      });
+    } buildGrid();
+    const lb = document.getElementById('lightbox'); const lbImg = document.getElementById('lbImage'); const lbCap = document.getElementById('lbCap'); let current = 0;
+    function openLightbox(i){ current = i; const {src, cap} = GALLERY[current]; lbImg.src = src; lbCap.textContent = cap || ''; lb.classList.remove('hidden'); lb.classList.add('flex'); }
+    function closeLightbox(){ lb.classList.add('hidden'); lb.classList.remove('flex'); }
+    function prev(){ current = (current - 1 + GALLERY.length) % GALLERY.length; openLightbox(current); }
+    function next(){ current = (current + 1) % GALLERY.length; openLightbox(current); }
+    document.getElementById('lbPrev').addEventListener('click', prev);
+    document.getElementById('lbNext').addEventListener('click', next);
+    document.getElementById('lbClose').addEventListener('click', closeLightbox);
+    lb.addEventListener('click', (e) => { if(e.target === lb) closeLightbox(); });
+    window.addEventListener('keydown', (e) => { if (lb.classList.contains('hidden')) return; if (e.key === 'Escape') closeLightbox(); if (e.key === 'ArrowLeft') prev(); if (e.key === 'ArrowRight') next(); });
+  </script>
+</body>
+</html>
